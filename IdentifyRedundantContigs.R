@@ -1,4 +1,7 @@
-dt = read.table("redundant_contigs_300323_2",header=F)
+#### Created by Hawlader Al-Mamun ####
+
+
+dt = read.table("your_filtered_lastz",header=F)
 
 small_dt = data.frame(V2=dt$V2,V7=dt$V7)
 
@@ -58,4 +61,4 @@ dim(reduced_dt)
 
 reduced_dt = reduced_dt[,-1]
 
-write.table(reduced_dt,"redundant_contigs_300323_wo_duplicate.txt", row.names = F, col.names = F,quote = F,sep = "\t")
+write.table(reduced_dt,"filtered_lastz_wo_duplicate.txt", row.names = F, col.names = F,quote = F,sep = "\t")
